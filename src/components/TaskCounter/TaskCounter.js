@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
+
 import { getTasks } from "redux/selectors";
+
 import css from "./TaskCounter.module.css";
 
 export const TaskCounter = () => {
@@ -12,6 +14,7 @@ export const TaskCounter = () => {
       } else {
         acc.active += 1;
       }
+
       return acc;
     },
     { active: 0, completed: 0 }
